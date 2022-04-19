@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# 01. General
+--------------------------------------------------------------*/
+
+html {
+    overflow-x: hidden;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    line-height: 1.5;
+  }
+  a {
+    color: #777;
+    text-decoration: none;
+    transition: 0.3s all ease;
+  }
+  a:hover {
+    color: #000;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-weight: 700;
+  }
+  .container {
+    z-index: 2;
+    position: relative;
+  }
+  .text-black {
+    color: #000 !important;
+  }
+  .text-primary {
+    color: #2d71a1 !important;
+  }
+  .border-top {
+    border-top: 1px solid #f2f2f2 !important;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #f2f2f2 !important;
+  }
+  figure figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  section {
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .section {
+    padding: 7rem 0;
+  }
+  .section-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #3db3c5, #274685);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

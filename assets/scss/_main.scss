@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+# 04. Main Section
+--------------------------------------------------------------*/
+
+.main-section {
+    position: relative;
+  }
+  .main-section .wave {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: -150px;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section .wave {
+      bottom: -180px;
+    }
+  }
+  .main-section .wave svg {
+    width: 100%;
+  }
+  .main-section, .main-section > .container > .row {
+    height: 100vh;
+    min-height: 880px;
+  }
+  .main-section.inner-page {
+    height: 60vh;
+    min-height: 0;
+  }
+  .main-section.inner-page .main-text {
+    transform: translateY(-150px);
+    margin-top: -120px;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section.inner-page .main-text {
+      margin-top: -80px;
+    }
+  }
+  .main-section h1 {
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .main-section .main-text-image {
+      margin-top: 4rem;
+    }
+  }
+  .main-section p {
+    font-size: 18px;
+    color: #000;
+  }
+  .main-section .pixel-wrap {
+    position: relative;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section .pixel-wrap {
+      text-align: center;
+    }
+  }
+  .main-section .pixel-wrap .phone-2, .main-section .pixel-wrap .phone-1{
+    position: absolute;
+    top: -50%;
+    overflow: hidden;
+    left: 0;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section .pixel-wrap .phone-2, .main-section .pixel-wrap .phone-1{
+      position: relative;
+      top: 0;
+      max-width: 100%;
+    }
+  }
+  .main-section .pixel-wrap .phone-2, .main-section .pixel-wrap .phone-1{
+    width: 250px;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section .pixel-wrap .phone-1 {
+      margin-left: -150px;
+    }
+  }
+  .main-section .pixel-wrap .phone-2 {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 250px;
+  }
+  @media screen and (max-width: 992px) {
+    .main-section .pixel-wrap .phone-2{
+      width: 250px;
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 100px;
+    }
+  }
+
+/*--------------------------------------------------------------
+Back to top button
+--------------------------------------------------------------*/
+
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #FFFF00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    box-shadow: 3px 3px 3px #00000081;
+  }
+  .back-to-top i {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    line-height: 0;
+  }
+  .back-to-top:hover {
+    background: #FFFF00;
+    color: #fff;
+  }
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .btn {
+    border: none;
+    padding: 15px 30px !important;
+  }
+  .btn.btn-outline-white {
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+  }
+  .btn.btn-outline-white:hover {
+    background: #fff;
+    color: #2d71a1;
+  }
+  .btn.btn-primary {
+    background: #2d71a1;
+    background: linear-gradient(-45deg, #1391a5, #274685);
+    color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  }
+
+/*--------------------------------------------------------------
+Highlights
+--------------------------------------------------------------*/
+
+  .personal-bg{
+    background-color: #EFF7CF;
+  }
+  .safe-bg{
+    background-color: #D7EFFE;
+  }
+  .effortless-bg{
+    background-color: #FFDACD;
+  }
+
+/*--------------------------------------------------------------
+Material you
+--------------------------------------------------------------*/
+
+  .materialYou-bg{
+    background-color: #D8FB4D;
+  }
