@@ -36,16 +36,16 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative; }
 
 .text-black {
-  color: #000 !important; }
+  color: #000; }
 
 .text-primary {
-  color: #2d71a1 !important; }
+  color: #2d71a1; }
 
 .border-top {
-  border-top: 1px solid #f2f2f2 !important; }
+  border-top: 1px solid #f2f2f2; }
 
 .border-bottom {
-  border-bottom: 1px solid #f2f2f2 !important; }
+  border-bottom: 1px solid #f2f2f2; }
 
 figure figcaption {
   margin-top: 0.5rem;
@@ -366,19 +366,21 @@ Mobile navigation
 /*--------------------------------------------------------------
 Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
+.button_style, .back-to-top {
   background: #FFFF00;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
   box-shadow: 3px 3px 3px #00000081; }
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996; }
 
 .back-to-top i {
   font-size: 28px;
@@ -395,7 +397,7 @@ Back to top button
 
 .btn {
   border: none;
-  padding: 15px 30px !important; }
+  padding: 15px 30px; }
 
 .btn.btn-outline-white {
   border: 2px solid #fff;
@@ -415,13 +417,13 @@ Back to top button
 /*--------------------------------------------------------------
 Highlights
 --------------------------------------------------------------*/
-.personal-bg {
+.bg--personal {
   background-color: #EFF7CF; }
 
-.safe-bg {
+.bg--safe {
   background-color: #D7EFFE; }
 
-.effortless-bg {
+.bg--effortless {
   background-color: #FFDACD; }
 
 /*--------------------------------------------------------------

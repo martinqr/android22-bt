@@ -107,20 +107,25 @@
 /*--------------------------------------------------------------
 Back to top button
 --------------------------------------------------------------*/
-
-  .back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 996;
+  .button_style{
     background: #FFFF00;
     width: 40px;
     height: 40px;
     border-radius: 50px;
     transition: all 0.4s;
     box-shadow: 3px 3px 3px #00000081;
+  }
+  @mixin bct{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+  }
+  .back-to-top {
+    @include bct;
+    @extend .button_style;
   }
   .back-to-top i {
     font-size: 28px;
@@ -137,7 +142,7 @@ Back to top button
   }
   .btn {
     border: none;
-    padding: 15px 30px !important;
+    padding: 15px 30px;
   }
   .btn.btn-outline-white {
     border: 2px solid #fff;
@@ -159,15 +164,17 @@ Back to top button
 Highlights
 --------------------------------------------------------------*/
 
-  .personal-bg{
-    background-color: #EFF7CF;
+$HighlightsBg:(
+  personal:#EFF7CF,
+  safe:#D7EFFE,
+  effortless:#FFDACD,
+);
+
+@each $bg,$color in $HighlightsBg{
+  .bg--#{$bg}{
+    background-color: $color;
   }
-  .safe-bg{
-    background-color: #D7EFFE;
-  }
-  .effortless-bg{
-    background-color: #FFDACD;
-  }
+}
 
 /*--------------------------------------------------------------
 Material you
