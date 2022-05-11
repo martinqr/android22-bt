@@ -5,7 +5,7 @@
 .main-section {
     position: relative;
   }
-  .main-section .wave {
+  .main-section .mirror{
     width: 100%;
     overflow: hidden;
     position: absolute;
@@ -13,12 +13,10 @@
     bottom: -150px;
   }
   @media screen and (max-width: 992px) {
-    .main-section .wave {
+    .main-section .mirror {
+      width: 100%;
       bottom: -180px;
     }
-  }
-  .main-section .wave svg {
-    width: 100%;
   }
   .main-section, .main-section > .container > .row {
     height: 100vh;
